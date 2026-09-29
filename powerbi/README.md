@@ -1,6 +1,6 @@
 # EcoSense — Power BI Plant Operations Dashboard 📊
 
-This directory contains the Power BI reporting assets for the **EcoSense** environmental measurement equipment monitoring system (designed for Anatec Yanako industrial instrumentation).
+This directory contains the Power BI reporting assets for the **EcoSense** environmental measurement equipment monitoring system (designed for continuous wastewater and flue gas industrial telemetry).
 
 ---
 

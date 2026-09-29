@@ -3,7 +3,7 @@ EcoSense - Report Generator Module
 ====================================
 
 Generates professional PDF and Excel reports from analysis results.
-Maps directly to Anatec Yanako internship deliverables:
+Industry standard deliverables:
     - Data Visualization Report
     - Abnormal Trend Analysis Report
     - Maintenance Improvement Proposal
@@ -400,7 +400,7 @@ def generate_maintenance_proposal_report(
 ) -> str:
     """
     Generate the Maintenance Improvement & Data Collection Proposal Report (PDF).
-    Maps to Anatec Yanako internship deliverables:
+    Includes:
       - Maintenance Improvement Proposal
       - Additional Data Collection Proposal
     """
@@ -418,14 +418,14 @@ def generate_maintenance_proposal_report(
     pdf.add_page()
     pdf.add_section("1. Executive Summary & Strategic Objective")
     pdf.add_body_text(
-        "This proposal outlines a Condition-Based Maintenance (CBM) framework for Anatec Yanako "
-        "environmental measurement equipment deployed in industrial wastewater and exhaust treatment plants. "
+        "This proposal outlines a Condition-Based Maintenance (CBM) framework for industrial "
+        "environmental measurement equipment deployed in continuous wastewater and flue gas treatment plants. "
         "Transitioning from calendar-based reactive maintenance to continuous condition monitoring ensures "
         "regulatory compliance, reduces catastrophic sensor failures, and minimizes unbudgeted plant downtime."
     )
     
     pdf.add_alert_box(
-        "Scenario Benchmark: Potential for ~65% reduction in unscheduled downtime under modeled operational conditions.",
+        "Scenario Benchmark: Modeled condition-based strategy indicates substantial reduction in unscheduled downtime under parameterized operational assumptions.",
         level="success"
     )
     

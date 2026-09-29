@@ -1,7 +1,7 @@
 # EcoSense 🏭
 ## Environmental Sensor Anomaly Detection & Condition Monitoring Dashboard
 
-EcoSense is an end-to-end data analysis and visualization system designed for environmental measurement equipment (such as wastewater and exhaust gas instrumentation produced by Anatec Yanako). It analyzes 6 months of 15-minute telemetry across 9 sensors, distinguishes operational anomaly detections from test bench ground truth, computes multi-factor condition health scores, and recommends maintenance action windows.
+EcoSense is an end-to-end data analysis and visualization system designed for environmental measurement equipment (such as continuous wastewater discharge and flue gas instrumentation across industrial facilities). It analyzes 6 months of 15-minute telemetry across 9 sensors, distinguishes operational anomaly detections from test bench ground truth, computes multi-factor condition health scores, and recommends maintenance action windows.
 
 ---
 
@@ -136,9 +136,9 @@ Cost comparisons between Reactive, Calendar-Scheduled, and Condition-Based Maint
 
 ---
 
-## 🎯 Alignment with Anatec Yanako Deliverables
-
-| Internship Deliverable | Implementation in EcoSense |
+## 🎯 Industrial Deliverables & Alignment
+ 
+| Project Deliverable | Implementation in EcoSense |
 |---|---|
 | **Data Visualization Report** | Auto-generated PDF in `reports/data_visualization_report.pdf` & interactive Streamlit dashboards |
 | **Abnormal Trend Analysis Report** | Rigorous evaluation comparing ensemble output against ground truth in `reports/anomaly_analysis_report.pdf` |
@@ -179,5 +179,5 @@ flowchart TD
 
 ---
 
-## 📝 License
-Built as an enterprise-grade portfolio project tailored for the **Anatec Yanako Environmental Measurement Equipment Data Analysis and Maintenance Improvement Internship Program**.
+## 📝 Project Scope
+Built as an enterprise-grade portfolio project designed for environmental telemetry analytics, continuous emission monitoring systems (CEMS), and industrial predictive maintenance.

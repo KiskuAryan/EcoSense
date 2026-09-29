@@ -234,7 +234,7 @@ st.markdown("---")
 st.markdown("### 💰 Scenario-Based Maintenance Cost Model (Hypothetical Simulation)")
 st.caption(
     "⚠️ **Simulation Disclaimer**: The figures below represent parameterized scenario assumptions "
-    "for strategic comparison of maintenance policies. They do not represent actual proprietary accounting figures of Anatec Yanako."
+    "for strategic comparison of maintenance policies. They do not represent actual proprietary accounting figures of a specific commercial facility."
 )
 
 n_sensors = len(water_sensors) + len(air_sensors)

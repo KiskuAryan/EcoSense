@@ -3,7 +3,7 @@ EcoSense - Synthetic Environmental Sensor Data Generator
 =========================================================
 
 Generates realistic time-series data for environmental monitoring sensors,
-simulating what Anatec Yanako's equipment would produce in factory settings.
+simulating what continuous measurement equipment produces in industrial factory settings.
 
 Sensor Categories:
     - Water Quality: pH, Turbidity, Dissolved Oxygen, Temperature, Conductivity
