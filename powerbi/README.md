@@ -16,17 +16,23 @@ This directory contains the Power BI reporting assets for the **EcoSense** envir
 1. **Executive Overview** (`Page 1`):
    - **4 Question-Driven KPIs**: Actively monitored sensors (9), total operational anomaly points (676), fleet health index (91.5/100), and units in warning condition (3).
    - **Telemetry Visuals**: Wastewater pH telemetry curve, flue gas CO₂ emission concentration, monthly incident frequency, and process medium defect breakdown (Wastewater vs. Flue Gas).
+   
+   ![01_executive_overview](screenshots/01_executive_overview.png)
 
 2. **Operational Anomaly Audit** (`Page 2`):
    - **3 Diagnostic KPIs**: Total operational detections (676), affected equipment units (7 of 9), mean incident severity (0.33).
    - **Chronological Incident Spikes**: Daily time-series showing major defect clusters (February peak at 68 detections).
    - **Root Cause & Severity Breakdown**: Defect count per sensor (Conductivity and pH driving 64% of alerts), severity histogram, and chronological monthly volume.
+   
+   ![02_anomaly_analysis](screenshots/02_anomaly_analysis.png)
 
 3. **Sensor Deep-Dive & Temporal Trend Explorer** (`Page 3`):
    - **Single-Sensor Inspection**: Sensor selector and custom date window slicer.
    - **3 Statistical Baselines**: Minimum recorded reading, typical operating mean, and peak surge value.
    - **Diurnal Operating Cycle**: 24-hour diurnal profile (00:00–23:00) proving correlation with industrial plant production shifts.
    - **Longitudinal Telemetry**: 6-month continuous waveform tracking drift and dropouts.
+   
+   ![03_sensor_trend_analysis](screenshots/03_sensor_trend_analysis.png)
 
 4. **Fleet Condition & Sensor Health Index** (`Page 4`):
    - **Health Scoring**: Standardized 4-tier health framework:
@@ -36,11 +42,15 @@ This directory contains the Power BI reporting assets for the **EcoSense** envir
      - 🔴 **Critical**: < 50 (immediate replacement)
    - **Fleet Distribution Donut**: 66.7% Healthy (6 units) vs. 33.3% Warning (3 units).
    - **Health Score Ranking Bar & Degradation Table**: Individual sensor ranking with weekly slope rates (identifying PM2.5 at -0.20/week drift).
+   
+   ![04_sensor_health](screenshots/04_sensor_health.png)
 
 5. **Condition-Based Maintenance & Action Register** (`Page 5`):
    - **Action & Dispatch Register**: Formal dispatch table listing sensors, health tiers, anomaly load, weekly degradation rates, and assigned actions (`Calibration`).
    - **4 Grounded KPIs**: Sensors requiring review (3), critical stoppages (0), total defect load to audit (676), units needing immediate calibration (1).
    - **Equipment Defect Load Chart**: Relative defect volume comparison.
+   
+   ![05_maintenance_planning](screenshots/05_maintenance_planning.png)
 
 ---
 

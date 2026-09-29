@@ -38,6 +38,40 @@ streamlit run dashboard/app.py
 
 ---
 
+## 📊 Executive Dashboard Preview (Power BI)
+
+EcoSense includes a production-grade 5-page Microsoft Power BI reporting suite designed for plant managers and operational supervisors to monitor fleet health, investigate anomaly spikes, and manage maintenance dispatch registers.
+
+![EcoSense Executive Overview](powerbi/screenshots/01_executive_overview.png)
+
+<details>
+<summary><b>🔍 View All 5 Power BI Dashboard Pages (Click to Expand)</b></summary>
+<br>
+
+#### 1. Executive Fleet Overview
+*4 question-driven KPIs, wastewater pH & exhaust CO₂ trends, monthly incident volume, and medium breakdown.*
+![01_executive_overview](powerbi/screenshots/01_executive_overview.png)
+
+#### 2. Operational Anomaly & Model Detection Audit
+*Daily surge timeline, sensor defect load distribution, severity histogram, and chronological monthly incidents.*
+![02_anomaly_analysis](powerbi/screenshots/02_anomaly_analysis.png)
+
+#### 3. Sensor Deep-Dive & Temporal Trend Explorer
+*Statistical baselines (min, mean, peak surge), 24-hour diurnal operating profile, and 6-month continuous waveform.*
+![03_sensor_trend_analysis](powerbi/screenshots/03_sensor_trend_analysis.png)
+
+#### 4. Fleet Condition & Sensor Health Index
+*4-tier health status distribution donut, sensor health ranking bar chart, and weekly degradation rates table.*
+![04_sensor_health](powerbi/screenshots/04_sensor_health.png)
+
+#### 5. Condition-Based Maintenance & Action Register
+*Formal maintenance dispatch register, action assignments, critical alarms, and defect load comparison.*
+![05_maintenance_planning](powerbi/screenshots/05_maintenance_planning.png)
+
+</details>
+
+---
+
 ## 📁 Project Structure
 
 ```
