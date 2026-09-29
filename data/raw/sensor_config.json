@@ -1,0 +1,114 @@
+{
+  "water_quality": {
+    "pH": {
+      "base": 7.2,
+      "noise_std": 0.15,
+      "daily_amplitude": 0.3,
+      "seasonal_amplitude": 0.2,
+      "unit": "",
+      "normal_min": 6.5,
+      "normal_max": 8.5,
+      "absolute_min": 0.0,
+      "absolute_max": 14.0,
+      "description": "Measure of acidity/alkalinity of water"
+    },
+    "turbidity_ntu": {
+      "base": 2.5,
+      "noise_std": 0.4,
+      "daily_amplitude": 0.8,
+      "seasonal_amplitude": 0.5,
+      "unit": "NTU",
+      "normal_min": 0.0,
+      "normal_max": 5.0,
+      "absolute_min": 0.0,
+      "absolute_max": 1000.0,
+      "description": "Clarity of water, measured in Nephelometric Turbidity Units"
+    },
+    "dissolved_oxygen_mg_l": {
+      "base": 7.5,
+      "noise_std": 0.3,
+      "daily_amplitude": 0.5,
+      "seasonal_amplitude": 1.0,
+      "unit": "mg/L",
+      "normal_min": 6.0,
+      "normal_max": 9.0,
+      "absolute_min": 0.0,
+      "absolute_max": 20.0,
+      "description": "Amount of oxygen dissolved in water"
+    },
+    "temperature_c": {
+      "base": 22.0,
+      "noise_std": 0.5,
+      "daily_amplitude": 2.0,
+      "seasonal_amplitude": 6.0,
+      "unit": "\u00b0C",
+      "normal_min": 15.0,
+      "normal_max": 30.0,
+      "absolute_min": -5.0,
+      "absolute_max": 50.0,
+      "description": "Water temperature"
+    },
+    "conductivity_us_cm": {
+      "base": 450.0,
+      "noise_std": 20.0,
+      "daily_amplitude": 30.0,
+      "seasonal_amplitude": 50.0,
+      "unit": "\u00b5S/cm",
+      "normal_min": 200.0,
+      "normal_max": 800.0,
+      "absolute_min": 0.0,
+      "absolute_max": 2000.0,
+      "description": "Ability of water to conduct electrical current"
+    }
+  },
+  "air_quality": {
+    "co2_ppm": {
+      "base": 420.0,
+      "noise_std": 15.0,
+      "daily_amplitude": 40.0,
+      "seasonal_amplitude": 20.0,
+      "unit": "ppm",
+      "normal_min": 350.0,
+      "normal_max": 500.0,
+      "absolute_min": 200.0,
+      "absolute_max": 5000.0,
+      "description": "Carbon dioxide concentration"
+    },
+    "nox_ppm": {
+      "base": 0.045,
+      "noise_std": 0.008,
+      "daily_amplitude": 0.02,
+      "seasonal_amplitude": 0.01,
+      "unit": "ppm",
+      "normal_min": 0.0,
+      "normal_max": 0.1,
+      "absolute_min": 0.0,
+      "absolute_max": 1.0,
+      "description": "Nitrogen oxides concentration"
+    },
+    "so2_ppm": {
+      "base": 0.02,
+      "noise_std": 0.005,
+      "daily_amplitude": 0.01,
+      "seasonal_amplitude": 0.008,
+      "unit": "ppm",
+      "normal_min": 0.0,
+      "normal_max": 0.05,
+      "absolute_min": 0.0,
+      "absolute_max": 0.5,
+      "description": "Sulfur dioxide concentration"
+    },
+    "pm25_ug_m3": {
+      "base": 18.0,
+      "noise_std": 4.0,
+      "daily_amplitude": 8.0,
+      "seasonal_amplitude": 6.0,
+      "unit": "\u00b5g/m\u00b3",
+      "normal_min": 0.0,
+      "normal_max": 35.0,
+      "absolute_min": 0.0,
+      "absolute_max": 500.0,
+      "description": "Fine particulate matter concentration"
+    }
+  }
+}

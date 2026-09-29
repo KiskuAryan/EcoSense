@@ -1,0 +1,29 @@
+# EcoSense - Data Generation Utilities
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files (regenerable)
+data/raw/*.csv
+data/processed/*.csv
+data/anomalies/*.csv
+
+# Generated reports
+reports/*.pdf
+reports/*.xlsx
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+.venv/
+env/
