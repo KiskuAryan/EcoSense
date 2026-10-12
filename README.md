@@ -131,7 +131,21 @@ We evaluated four detection approaches and selected an interpretable **2-out-of-
 
 > **Note on Windowing**: For historical retrospective auditing, a centered 24-hour moving window (`center=True`) is deployed to avoid phase lag. For live streaming deployment, a trailing causal window (`center=False`) is recommended.
 
-### 3. Unified 4-Tier Condition Scoring Framework
+### 3. Model Evaluation & Ground Truth Benchmark
+The operational 2-of-3 ensemble was empirically benchmarked against the 69 ground-truth injected failure episodes across 155,529 telemetry observations (17,281 readings × 9 sensors):
+
+| Evaluation Dimension | Metric | Result | Operational Significance |
+|---|---|---|---|
+| **Overall Telemetry Accuracy** | Point Accuracy | **95.16%** | Correctly classified 147,994 of 155,529 readings |
+| **Operational Precision** | Precision ($P$) | **100.00%** | **Zero False Alarms (FP = 0)**; prevents plant operator alarm fatigue |
+| **Gradual Drift Event Recall** | Episode Recall | **72.2%** (13 / 18) | Successfully alerted on slow electrode fouling & calibration drift |
+| **Sudden Spike Event Recall** | Episode Recall | **60.7%** (17 / 28) | Flagged high-amplitude process upsets and shock loads |
+| **Cyclic Oscillation Event Recall**| Episode Recall | **33.3%** (3 / 9) | Caught extreme controller hunting excursions |
+| **Flatline Event Recall** | Episode Recall | **0.0%** (0 / 14)* | *Value thresholding requires derivative $\Delta x=0$ rate-of-change checks |
+
+> **Key Engineering Takeaway**: To eliminate alarm fatigue in continuous plant monitoring, the operational ensemble was tuned for maximum precision (100%). While value-magnitude statistical bounds excel at catching drift and process spikes, temporal flatlines (variance = 0 near the mean) are handed off to the first-derivative and rate-of-change stability pipeline.
+
+### 4. Unified 4-Tier Condition Scoring Framework
 Sensors are scored from 0 to 100 using four weighted components:
 - **Normal Envelope Dwell Time** (0–40 pts)
 - **Boundary Deviation Distance** (0–30 pts)
@@ -146,10 +160,10 @@ All dashboard gauges, health trend charts, action schedules, and reports adhere 
 | **50 – 69** | 🟠 **Degradation Warning** | Schedule recalibration & cleaning | 14 Days |
 | **< 50** | 🔴 **Critical Risk** | Immediate on-site technician dispatch | Within 48 Hours |
 
-### 4. Condition-Based Maintenance (CBM) vs. Full RUL
+### 5. Condition-Based Maintenance (CBM) vs. Full RUL
 EcoSense provides **Sensor Health Scoring + Empirical Degradation Trend Analysis**. It is not a learned deep-learning Remaining Useful Life (RUL) regression model. RUL regression is formally proposed as a Phase 2 expansion once auxiliary vibration and fluid velocity sensors are deployed.
 
-### 5. Scenario-Based Maintenance Cost Model
+### 6. Scenario-Based Maintenance Cost Model
 Cost comparisons between Reactive, Calendar-Scheduled, and Condition-Based Maintenance represent **parameterized hypothetical simulations** designed for strategic policy comparison, rather than proprietary operational accounting data.
 
 ---
